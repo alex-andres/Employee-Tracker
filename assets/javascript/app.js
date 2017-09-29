@@ -11,6 +11,13 @@
 
    var database = firebase.database();
 
+   var name = "";
+   var role = "";
+   var startDate = "";
+   var monthsWorked = "";
+   var monthlyRate = "";
+   var totalBilled = "";
+
    
 
 
