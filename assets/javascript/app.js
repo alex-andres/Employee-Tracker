@@ -41,9 +41,9 @@ $("button").on("click", function(){
 database.ref().on("child_added", function(childSnapshot){
 	var newRow = $("<tr>");
 
-	var employee = $("<td>").html($("#employeeName").val().trim());
-	// var title = $("<td>").html($("#title").val().trim());
-	var startDate = $("<td>").html($("#trainTime").val().trim());
+	var employee = $("<td>").html($(childSnapshot.val().name));
+	var title = $("<td>").html($(childSnapshot.val().role));
+	var startDate = $("<td>").html($(childSnapshot.val().trainTime));
 	// var monthlyRate = $("<td>").html($("#monthlyRate").val().trim());
 	// var totalComp = $("<td>").html($("#totalComp").val().trim());
 
