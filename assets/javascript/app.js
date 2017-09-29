@@ -44,7 +44,7 @@ database.ref().on("child_added", function(childSnapshot){
 	var employee = $("<td>").html($("#employeeName").val().trim());
 	// var title = $("<td>").html($("#title").val().trim());
 	var startDate = $("<td>").html($("#trainTime").val().trim());
-	var monthlyRate = $("<td>").html($("#monthlyRate").val().trim());
+	// var monthlyRate = $("<td>").html($("#monthlyRate").val().trim());
 	// var totalComp = $("<td>").html($("#totalComp").val().trim());
 
 	newRow.append(employee)
