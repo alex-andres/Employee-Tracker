@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/0f97643179.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+        <script  src="assets/javascript/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Anton|Carrois+Gothic+SC|Montserrat:900|Roboto|Oswald" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
@@ -71,22 +76,22 @@
 
                     <form class="text-left pt-3">
                         <div class="form-group">
-                            <label for="EmployeeName">Employee Name</label>
-                            <input type="text" class="form-control" id="EmployeeName" placeholder="Enter employee">
+                            <label for="employeeName">Employee Name</label>
+                            <input type="text" class="form-control" id="employeeName" placeholder="Enter employee">
                         </div>
                         <div class="form-group ">
-                            <label for="Role">Role</label>
-                            <input type="text" class="form-control" id="Role" placeholder="Enter role">
-                        </div>
-
-                        <div class="form-group ">
-                            <label for="TrainTime">Start Date (DD/MM/YY -ex: 01/01/89)</label>
-                            <input type="text" class="form-control" id="TrainTime" placeholder="Enter date">
+                            <label for="role">Role</label>
+                            <input type="text" class="form-control" id="role" placeholder="Enter role">
                         </div>
 
                         <div class="form-group ">
-                            <label for="MontlyRate">Frequency (min)</label>
-                            <input type="text" class="form-control" id="MontlyRate" placeholder="Enter monthly rate">
+                            <label for="trainTime">Start Date (DD/MM/YY -ex: 01/01/89)</label>
+                            <input type="text" class="form-control" id="trainTime" placeholder="Enter date">
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="montlyRate">Frequency (min)</label>
+                            <input type="text" class="form-control" id="montlyRate" placeholder="Enter monthly rate">
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>
@@ -102,7 +107,8 @@
      </div><!-- ************************* END
 
         <!--BOOTSTRAP and JS STUFF -->
-        <script  src="assets/javascript/app.js"></script>
+        
+        
 
 
     </body>
