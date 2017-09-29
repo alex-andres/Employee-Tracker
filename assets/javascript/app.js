@@ -41,20 +41,20 @@ $("button").on("click", function(){
 database.ref().on("child_added", function(childSnapshot){
 	var newRow = $("<tr>");
 
-	var employee = $("<td>").html(childSnapshot.val().name);
+	var employee = $("<td scope='col'>").html(childSnapshot.val().name);
 
 	console.log(childSnapshot.val().name)
 
-	var title = $("<td>").html(childSnapshot.val().role);
+	var title = $("<td scope='col'>").html(childSnapshot.val().role);
 
-	var startDate = $("<td>").html(childSnapshot.val().startDate);
+	var startDate = $("<td scope='col'>").html(childSnapshot.val().startDate);
 	// var monthlyRate = $("<td>").html($("#monthlyRate").val().trim());
 	// var totalComp = $("<td>").html($("#totalComp").val().trim());
 
 	newRow.append(employee)
 		// .append(title)
-	newRow.append(title)
-	newRow.append(startDate)
+		.append(title)
+		.append(startDate)
 		// .append(totalComp);
 
 	$("#employeeTable").append(newRow);
